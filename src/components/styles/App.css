@@ -1,0 +1,351 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 800;
+}
+
+.app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.app>div:nth-child(1) {
+    padding: 10px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.header>div:nth-child(1) {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    width: 100%;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.header>div:nth-child(1)>img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+/* header styles ends here */
+
+
+textarea {
+    resize: none;
+    width: 100%;
+    height: 280px;
+    border: 2px solid black;
+}
+
+
+.ComponentForm {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.formHeader {
+    display: flex;
+    gap: 5px;
+    padding-top: 10px;
+}
+
+.formHeader>div:first-child {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formHeader>div:first-child>img {
+    width: 20px;
+    height: 20px;
+}
+
+.userExperienceTitle {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+label {
+    display: block;
+}
+
+.formContainer {
+    width: 100%;
+}
+
+.formContainer>form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.formContainer>form>div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 48%;
+}
+
+.formContainer>form>div:nth-child(5) {
+    min-width: 100%;
+}
+
+.formContainer>form>div>input {
+    min-width: 100%;
+    height: 40px;
+    background-color: rgb(128, 128, 128, 0.3);
+    border: none;
+    border-radius: 5px;
+}
+
+.dropDown {
+    display: flex;
+    margin-left: auto;
+    margin-right: 10px;
+    width: fit-content;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dropDown>img {
+    /* width: 10px; */
+    height: 12px;
+}
+
+.deleteBtn>img {
+    width: 20px;
+}
+
+.componentTitle {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.componentTitle>div:first-child {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.componentTitle>div:nth-child(2) {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* .userExperience {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-left: 35px;
+    padding-right: 35px;
+} */
+
+/* add button styles starts here */
+.addBtn {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.addBtn>div:first-child {
+    background-color: rgb(255, 165, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: none;
+}
+
+.addBtn>div>img {
+    width: 25px;
+}
+
+/* add button styles ends here */
+.result {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 35px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    height: 97vh;
+}
+a{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.det,
+.ref,
+.edu,
+.exp {
+    display: none;
+}
+
+.item {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.arrowUp {
+    height: 20px;
+}
+
+.educationContainer {
+    display: none;
+}
+
+.invisible {
+    display: none;
+}
+
+.progressBar {
+    width: 60px;
+}
+.printBtn{
+    width: 130px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(249, 97, 62);
+    border: none;
+}
+
+/* user details Settings */
+.userDetails>div:nth-child(2)>div:nth-child(1)>div:nth-child(2)>div:nth-child(1) {
+    display: none;
+}
+
+.userDetails>div:nth-child(2)>div:nth-child(1)>div:nth-child(2)>div:nth-child(2)>form>div:nth-child(5) {
+    display: none;
+}
+
+.userDetails>div:nth-child(2)>div:nth-child(1)>div:nth-child(3) {
+    display: none;
+}
+
+.userDetails>div:first-child {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.userDetails>div:first-child>div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+}
+
+select {
+    border: none;
+}
+
+.countryImg {
+    height: 20px;
+}
+
+/* result styles */
+.printable {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    max-width: 100%;
+    gap: 25px;
+    background-color: rgb(128, 128, 128,0.1);
+    min-height: 95vh;
+}
+
+.printable>div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.printable>div>div:first-child {
+    min-width: 40%;
+}
+
+.printable>div>div:nth-child(2) {
+    max-width: 60%;
+}
+
+/* setting printables font sizes */
+.printable>div>div:first-child {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.printable>div>div:nth-child(2)>div>div:first-child {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.printable>div>div:nth-child(2)>div>div:nth-child(2) {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.printable>div>div:nth-child(2)>div>div:nth-child(3) {
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(0, 0, 0, 0.6);
+}
+
+.printable>div>div:nth-child(2)>div>div:nth-child(4) {
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(0, 0, 0, 0.6);
+}
+
+.printable>div>div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+/* font sizes */
+.designHeader{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+@media(min-width: 1px) and (max-width:1000px) {
+    .app {
+        grid-template-columns: 1fr;
+    }
+
+    .formContainer>form>div {
+        min-width: 100%;
+    }
+
+    .result {
+        position: relative;
+    }
+}
